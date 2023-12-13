@@ -16,7 +16,7 @@ jobs:
     - name: Configurar entorno PHP
       uses: shivammathur/setup-php@v2
       with:
-        php-version: '8.2.0'
+        php-version: '8.2.5'
 
     - name: Install dependencies
       run: composer install --no-dev --prefer-dist --no-scripts --no-progress --no-suggest
