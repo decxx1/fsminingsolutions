@@ -16,19 +16,22 @@
     @component('_components.banner-contact')
     @endcomponent
     <!-- el about us -->
-    @component('_components.banner-features')
+    {{-- @component('_components.banner-features') --}}
+    @component('_components.banner-features2')
     @endcomponent
 @endsection
 
 
 @section('sections')
     <!-- Marcas -->
-    @component('_components.marcas')
-    @endcomponent
+    {{-- @component('_components.marcas')
+    @endcomponent --}}
     <!-- que es lo que hacemos -->
-    @component('_components.section-ts-service-area')
+    {{-- @component('_components.section-ts-service-area')
+    @endcomponent --}}
+    @component('_components.section-ts-service-area2')
     @endcomponent
    <!-- minerales y publicidad -->
-   @component('_components.extra-services')
-   @endcomponent
+   {{-- @component('_components.extra-services')
+   @endcomponent --}}
 @endsection
