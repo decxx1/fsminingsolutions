@@ -89,7 +89,7 @@
     @section('banners')
         @component('_components.breadcrumb')
             @slot('title', 'Servicios')
-            @slot('image', 'images/banner/banner1.jpg')
+            @slot('image', 'images/banner/banner2.jpg')
         @endcomponent
         <section id="main-container" class="main-container pb-2">
             <div class="container">
