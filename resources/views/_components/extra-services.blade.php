@@ -1,26 +1,4 @@
-{{--
-<section id="ts-service-area" class="ts-service-area pb-0">
-    <div class="blue-border">
-        <div class="row">
-            <div class="col-lg-6 col-md-6">
-                <img src="{{ asset ('images/project-2/ads.jpg') }}" alt="Folletos">
-            </div>
-            <div class="column">
-                <p>Texto 1</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-6">
 
-                <p>Venta y exportación de materiales de la actividad extractiva; asegurando
-                    prácticas justas y transparentes en la cadena de suministro.</p>
-            </div>
-            <div class="column">
-                <img src="{{ asset ('images/project-2/minerals.jpg') }}" alt="Minerales">
-            </div>
-        </div>
-    </div>
-</section> --}}
 <div class="container mt-5 mb-5" >
     @yield('titles-extra')
     <div class="row" >
@@ -38,15 +16,15 @@
 
         <div class="col-lg-6 mt-5 mt-lg-0">
             <img class="slider-image" src="{{ asset('images/projects-2/minerals.jpg') }}" alt="Minerals"
-                style="width: 100%; height: 75%">
+                style="width: 100%; height: 75%;border-radius: 20px;">
         </div>
 
 
     </div><!-- row end -->
     <div class="row">
         <div class="col-lg-6 mt-5 mt-lg-0">
-            <img class="slider-image" src="{{ asset('images/projects-2/ads.jpg') }}" alt="Imprenta"
-                style="width: 100%; height: 75%">
+            <img class="slider-image" src="{{ asset('images/projects-2/imprenta.jpg') }}" alt="Imprenta"
+                style="width: 100%; height: 75%;border-radius: 20px;">
         </div>
 
         <div class="col-lg-6">

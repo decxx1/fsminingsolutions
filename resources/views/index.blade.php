@@ -4,6 +4,7 @@
     $services = [
         [
             'directory' => asset('images/projects/project1.jpg'),
+            'icon' => '',
             'title' => 'Ingeniería',
             'content' => 'Ejecución de proyectos de ingeniería y construcción de
             infraestructuras para la industria minera, con un enfoque en el uso eficiente de
@@ -11,18 +12,21 @@
         ],
         [
             'directory' => asset('images/projects/project2.jpg'),
+            'icon' => '',
             'title' => 'Geología',
             'content' => 'Estudio y asesoramiento en la exploración de recursos minerales,
             incluyendo los de factibilidad y evaluación de impacto ambiental.'
         ],
         [
             'directory' => asset ('images/projects/project3.jpg'),
+            'icon' => '',
             'title' => 'Seguridad',
             'content' => 'Asesoramiento en medidas de seguridad y prevención de riesgos en
             proyectos mineros, incluyendo capacitación y seguimiento constante.'
         ],
         [
             'directory' => asset ('images/projects/project4.jpg'),
+            'icon' => '',
             'title' => 'Técnicas y procedimientos',
             'content' => 'Desarrollo e implementación de técnicas y procedimientos innovadores
             para la extracción y procesamiento de minerales, con un enfoque en la sostenibilidad
@@ -30,12 +34,14 @@
         ],
         [
             'directory' => asset ('images/projects/project5.jpg'),
+            'icon' => '',
             'title' => 'Investigación',
             'content' => 'Investigación y desarrollo de nuevas tecnologías y métodos para la
             industria minera, con un enfoque en la eficiencia y sostenibilidad.'
         ],
         [
-            'directory' => asset ('images/projects/project6.jpg'),
+            'directory' => asset ('images/projects/sustentable.jpg'),
+            'icon' => '',
             'title' => 'Medio ambiente',
             'content' => 'Implementación de tecnologías y procesos amigables con el ecosistema
             en la actividad minera. Readaptación del terreno improductivo, para darle un
@@ -84,8 +90,8 @@
     @endcomponent
     {{-- @component('_components.section-ts-service-area2')
     @endcomponent--}}
-
-    <div class="container" style="border-top: 10px solid #005E76; margin-top: 10px; "></div>
+    <!-- Separador -->
+    <div class="container" style="border-top: 10px solid var(--color-oscuro-1); margin-top: 10px; "></div>
     <!-- Servicios -->
     <section id="main-container" class="main-container pb-2">
         <div class="container">
@@ -100,6 +106,7 @@
                 @foreach ($services as $service)
                     @component('_components.services-page')
                         @slot('title', $service['title'] )
+                        @slot('icon', $service['icon'] )
                         @slot('directory', $service['directory'] )
                         @slot('content', $service['content'] )
                     @endcomponent
@@ -107,8 +114,9 @@
             </div>
         </div>
     </section>
+   <!-- Separador -->
+   <div class="container mt-5 mb-5" style="border-top: 10px solid var(--color-oscuro-1); margin-top: 10px; "></div>
    <!-- minerales y publicidad -->
-   <div class="container mt-5 mb-5" style="border-top: 10px solid #005E76; margin-top: 10px; "></div>
     @component('_components.extra-services')
         @section('titles-extra')
             <div class="row text-center">
