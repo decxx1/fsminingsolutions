@@ -62,12 +62,8 @@
 
 <section id="ts-service-area" class="ts-service-area pb-0">
     <div class="container">
-        <div class="row text-center">
-            <div class="col-12">
-                <h2 class="section-title">Todo lo que necesitas </h2>
-                <h3 class="section-sub-title">Soluciones eficientes y confiables</h3>
-            </div>
-        </div>
+        
+        @yield('titles-service-area')
         <!--/ Title row end -->
 
         <div class="row">

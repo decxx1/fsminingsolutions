@@ -1,4 +1,4 @@
-{{-- 
+{{--
 <section id="ts-service-area" class="ts-service-area pb-0">
     <div class="blue-border">
         <div class="row">
@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-lg-6 col-md-6">
 
-                <p>Venta y exportación de materiales de la actividad extractiva; asegurando 
+                <p>Venta y exportación de materiales de la actividad extractiva; asegurando
                     prácticas justas y transparentes en la cadena de suministro.</p>
             </div>
             <div class="column">
@@ -21,14 +21,8 @@
         </div>
     </div>
 </section> --}}
-<div class="container mt-5 mb-5" style="border-top: 10px solid #005E76; border-bottom: 10px solid #005E76; margin-top: 10px; margin-bottom: 10px;">    <div class= "row">
-        <div class="col-lg-12 text-center mt-5 mt-lg-0">
-            <br>
-            <h3 class="column-title">Servicios adicionales</h3>
-<br>
-<br>
-        </div>
-    </div>
+<div class="container mt-5 mb-5" >
+    @yield('titles-extra')
     <div class="row" >
         <div class="col-lg-6 mt-5 mt-lg-0">
             <h4 class="column-title">Venta de Minerales</h4>
@@ -58,11 +52,11 @@
         <div class="col-lg-6">
             <h4 class="column-title">Servicio de imprenta.</h4>
             <p>Creemos en la comunicación efectiva para garantizar mayor eficiencia y eficacia
-            a la hora de transmitir información. Esto permite aumentar la productividad, y 
-            reducir el riesgo de accidentes y/o tragedias. Ofrecemos una amplia gamma de 
-            servicios, desde la impresión de folletos informativos hasta la producción de avisos, 
-            notificaciones, alertas, señalizaciones y advertencias, nos aseguramos de que cada 
-            diseño cumpla con los requisitos de seguridad y comunicación visual que exige la 
+            a la hora de transmitir información. Esto permite aumentar la productividad, y
+            reducir el riesgo de accidentes y/o tragedias. Ofrecemos una amplia gamma de
+            servicios, desde la impresión de folletos informativos hasta la producción de avisos,
+            notificaciones, alertas, señalizaciones y advertencias, nos aseguramos de que cada
+            diseño cumpla con los requisitos de seguridad y comunicación visual que exige la
             industria.</p>
         </div><!-- Col end -->
 

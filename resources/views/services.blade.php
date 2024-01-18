@@ -4,44 +4,65 @@
     //Argumentos para service-card: directorio de la imagen, título y contenido del servicio
     $services = [
         [
-            'directory' => asset('images/projects/project1.jpg'),
-            'title' => 'Ingeniería',
-            'content' => 'Ejecución de proyectos de ingeniería y construcción de 
-            infraestructuras para la industria minera, con un enfoque en el uso eficiente de 
-            recursos naturales y energías renovables.'
+            'directory' => asset('images/services/grupo-electrogeno.jpg'),
+            'title' => 'Alquiler y venta de grupos electrogenos',
+            'content' => 'Generadores diesel, modernos y ecológicos: son apropiados para aplicaciones de potencia principal, potencia contínua o potencia de emergencia/standby.
+'
         ],
         [
-            'directory' => asset('images/projects/project2.jpg'),
-            'title' => 'Geología',
-            'content' => 'Estudio y asesoramiento en la exploración de recursos minerales, 
-            incluyendo los de factibilidad y evaluación de impacto ambiental.'
+            'directory' => asset('images/services/torre-luminaria.jpg'),
+            'title' => 'Alquiler y venta de torres luminarias.',
+            'content' => 'Para brindar una iluminación potente y segura en entornos mineros. Contamos con equipos modernos, obtén la iluminación adecuada para maximizar la eficiencia y la seguridad en tu operación minera.'
         ],
         [
-            'directory' => asset ('images/projects/project3.jpg'),
-            'title' => 'Seguridad',
-            'content' => 'Asesoramiento en medidas de seguridad y prevención de riesgos en 
-            proyectos mineros, incluyendo capacitación y seguimiento constante.'
+            'directory' => asset ('images/services/camiones.jpg'),
+            'title' => 'Alquiler de camionetas, autos y camiones',
+            'content' => 'ofrecemos una amplia flota de vehículos disponibles para alquiler, adaptados a tus requerimientos de transporte en la industria minera.Ya sea que necesites vehículos robustos para terrenos difíciles o autos eficientes para desplazamientos urbanos'
         ],
         [
-            'directory' => asset ('images/projects/project4.jpg'),
-            'title' => 'Técnicas y procedimientos',
-            'content' => 'Desarrollo e implementación de técnicas y procedimientos innovadores 
-            para la extracción y procesamiento de minerales, con un enfoque en la sostenibilidad 
-            y en la reducción del impacto ambiental.'
+            'directory' => asset ('images/services/movimientos-de-suelo.jpg'),
+            'title' => 'Servicios de movimientos de suelo y proyectos de ingenieria',
+            'content' => 'Nuestro equipo de ingenieros experimentados se encarga de planificar y ejecutar proyectos de movimiento de tierra de manera eficiente y segura. Ya sea que necesites nivelación de terrenos, excavaciones o rellenos, contamos con la maquinaria y el conocimiento necesario'
         ],
         [
-            'directory' => asset ('images/projects/project5.jpg'),
-            'title' => 'Investigación',
-            'content' => 'Investigación y desarrollo de nuevas tecnologías y métodos para la 
-            industria minera, con un enfoque en la eficiencia y sostenibilidad.'
+            'directory' => asset ('images/services/maquinas-viales.jpg'),
+            'title' => 'Venta de maquinaria vial y repuestos.',
+            'content' => 'Ofrecemos una amplia gama de equipos de alta calidad, incluyendo maquinaria pesada, excavadoras, cargadoras, camiones volquete y mucho más.'
         ],
         [
-            'directory' => asset ('images/projects/project6.jpg'),
-            'title' => 'Medio ambiente',
-            'content' => 'Implementación de tecnologías y procesos amigables con el ecosistema
-            en la actividad minera. Readaptación del terreno improductivo, para darle un 
-            uso y valor sustentable, amigable con el medio ambiente y favoreciendo el desarrollo
-            de la sociedad en general.'
+            'directory' => asset ('images/services/imprenta.jpg'),
+            'title' => 'Imprenta y carteleria',
+            'content' => 'Contamos con tecnología de vanguardia y un equipo de diseñadores y expertos en impresión que se asegurarán de que tus materiales impresos y carteles cumplan con los más altos estándares de calidad.'
+        ],
+        [
+            'directory' => asset ('images/services/limpieza.jpg'),
+            'title' => 'Insumos de limpieza',
+            'content' => 'Insumos de limpieza diseñados específicamente para la industria minera. Entendemos la importancia de mantener un entorno limpio y seguro en tus instalaciones mineras,'
+        ],
+        [
+            'directory' => asset ('images/services/bolsas.jpg'),
+            'title' => 'Bolsas y Big Bag',
+            'content' => 'Bolsas ideales para el empaque de productos a granel, como minerales, fertilizantes, arena y otros materiales utilizados en la industria minera. También ofrecemos Big Bags, que son contenedores de gran capacidad diseñados para facilitar la carga, descarga y transporte de materiales voluminosos.'
+        ],
+        [
+            'directory' => asset ('images/services/ferreteria.jpg'),
+            'title' => 'Materiales de ferreteria y construcción',
+            'content' => 'herramientas manuales y eléctricas, equipos de seguridad, accesorios de sujeción, productos de soldadura y una ámplia variedad de materiales para la construcción.'
+        ],
+        [
+            'directory' => asset ('images/services/epp.jpg'),
+            'title' => 'Equipamiento y productos de seguridad',
+            'content' => 'Nuestro catálogo incluye equipos de protección personal (EPP) como cascos, guantes, gafas de seguridad, calzado de seguridad y ropa de trabajo resistente. Estos productos están diseñados para cumplir con los estándares de seguridad más rigurosos y brindar la máxima protección a los trabajadores en el entorno minero.'
+        ],
+        [
+            'directory' => asset ('images/services/bentonita.jpg'),
+            'title' => 'Venta de Bentonita',
+            'content' => 'Un mineral ampliamente utilizado en la industria minera y otras aplicaciones industriales. La bentonita es una arcilla de origen natural con propiedades únicas, como su capacidad de absorción de agua y su plasticidad.'
+        ],
+        [
+            'directory' => asset ('images/services/carpas.jpg'),
+            'title' => 'Alquiler y venta de carpas',
+            'content' => 'Ya sea que necesites un espacio adicional para alojamiento, oficinas, comedores, áreas de descanso o cualquier otra aplicación, nuestras carpas son la solución perfecta.'
         ],
         // ... Agrega los valores para los otros servicios
     ];
@@ -60,7 +81,7 @@
         @endcomponent
         <section id="main-container" class="main-container pb-2">
             <div class="container">
-                <h2 style="color: black; text-align: center;">Nuestros servicios</h2>
+                <h2 class="mb-5" style="color: black; text-align: center;">Nuestros servicios</h2>
                 <div class="row">
                     @foreach ($services as $service)
                         @component('_components.services-page')

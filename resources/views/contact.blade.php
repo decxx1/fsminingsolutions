@@ -1,3 +1,35 @@
+{{-- .../fsminingsolutions/resources/views/contact.blade.php --}}
+
+@if(session('success'))
+    <div id="success-message" class="alert alert-success" style="position: absolute;z-index: 9999;width: 100%;text-align: center;">
+        {{ session('success') }}
+    </div>
+    <script>
+        setTimeout(function() {
+            var successMessage = document.getElementById('success-message');
+            if (successMessage) {
+                successMessage.remove();
+            }
+        }, 3000);
+    </script>
+@endif
+
+@if(session('error'))
+    <div id="error-message" class="alert alert-danger" style="position: absolute;z-index: 9999;width: 100%;text-align: center;">
+        {{ session('error') }}
+    </div>
+    <script>
+        setTimeout(function() {
+            var errorMessage = document.getElementById('error-message');
+            if (errorMessage) {
+                errorMessage.remove();
+            }
+        }, 3000);
+    </script>
+@endif
+
+
+
 @extends('layouts.landing')
 
 @section('top-layer')
@@ -55,7 +87,7 @@
                         </span>
                         <div class="ts-service-box-content">
                             <h4>Llámanos</h4>
-                            <p>(+54) 11-44138057</p>
+                            <p>(+99) 99-9999999</p>
                         </div>
                     </div>
                 </div><!-- Col 3 end -->
@@ -81,10 +113,10 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="column-title">Estamos para ayudarte.</h3>
+                        <h3 class="column-title">Estamos para ayudarte. Tu consulta no molesta.</h3>
                         <!-- contact form works with formspree.io  -->
                         <!-- contact form activation doc: https://docs.themefisher.com/constra/contact-form/ -->
-                        <form id="contact-form" action="#" method="post" role="form">
+                        <form id="contact-form" action="{{ route('contact.send') }}" method="post" role="form" enctype="multipart/form-data">
                             @csrf
                             <div class="error-container"></div>
                             <div class="row">
@@ -97,16 +129,9 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label>Email</label>
-                                        <input class="form-control form-control-email" name="email" id="email"
-                                            placeholder="ejemplo@ejemplo.com" type="email" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Asunto</label>
-                                        <input class="form-control form-control-subject" name="subject" id="subject"
-                                            placeholder="Solicitar asesoramiento..." required>
+                                        <label>Correo</label>
+                                        <input class="form-control" type="email" name="email" id="email"
+                                            placeholder="ejemplo@mail.com" required>
                                     </div>
                                 </div>
                             </div>
@@ -115,9 +140,12 @@
                                 <textarea class="form-control form-control-message" name="message" id="message"
                                     placeholder="Escribe tu mensaje aquí..." rows="10" required></textarea>
                             </div>
-                            <div class="text-right"><br>
-                                <button class="btn btn-primary solid blank" type="reset" style="background: lightcoral;"
-                                    onclick="resetForm()">Borrar todo</button>
+                            <div>
+                                <span>Adjuntar archivo</span>
+                                <input type="file" class="form-control-file" name="file" id="file" accept="image/*">
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-danger solid blank" type="reset" onclick="resetForm()"><i class="fas fa-trash-alt"></i></button>
                                 <button class="btn btn-primary solid blank" type="submit">Enviar mensaje</button>
                             </div>
                         </form>
