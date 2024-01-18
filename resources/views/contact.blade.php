@@ -113,21 +113,20 @@
 
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="column-title">Estamos para ayudarte. Tu consulta no molesta.</h3>
-                        <!-- contact form works with formspree.io  -->
-                        <!-- contact form activation doc: https://docs.themefisher.com/constra/contact-form/ -->
+                        <h3 class="column-title">Consúltenos, estamos para ayudarle</h3>
+
                         <form id="contact-form" action="{{ route('contact.send') }}" method="post" role="form" enctype="multipart/form-data">
                             @csrf
                             <div class="error-container"></div>
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Nombre</label>
                                         <input class="form-control form-control-name" name="name" id="name"
                                             placeholder="Tu nombre" type="text" required>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Correo</label>
                                         <input class="form-control" type="email" name="email" id="email"
