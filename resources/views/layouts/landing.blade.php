@@ -2,12 +2,15 @@
 <html lang="es">
 
 <!-- HEAD -->
+<head>
 @include('layouts._partials.head')
+@yield('head')
+</head>
 <!-- END HEAD -->
 
 
 <body>
-    
+
     <div class="body-inner">
 
         @yield('top-layer'):
@@ -28,7 +31,7 @@
     <!-- JAVASCRIPT -->
     @include('layouts._partials.js')
     <!-- END JAVASCRIPT -->
-    
+
 </body>
 
 </html>
