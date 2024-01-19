@@ -33,27 +33,7 @@
 @extends('layouts.landing')
 
     @section('head')
-        <script type="text/javascript">
-            function callbackThen(response){
-                // read HTTP status
-                console.log(response.status);
-                // read Promise object
-                response.json().then(function(data){
-                    console.log(data);
-                });
 
-            }
-            function callbackCatch(error){
-                console.error('Error:', error)
-            }
-        </script>
-
-        {!! htmlScriptTagJsApi([
-
-            'callback_then' => 'callbackThen',
-            'callback_catch' => 'callbackCatch'
-
-        ]) !!}
     @endsection
 
     @section('top-layer')
@@ -67,6 +47,8 @@
         @slot('title', 'Contacto')
         @slot('image', 'images/banner/banner1.jpg')
     @endcomponent
+
+    {!! RecaptchaV3::initJs() !!}
 
     <section id="main-container" class="main-container">
         <div class="container">
@@ -167,6 +149,8 @@
                                 <span>Adjuntar archivo</span>
                                 <input type="file" class="form-control-file" name="file" id="file" accept="image/*">
                             </div>
+                            {!! RecaptchaV3::field('sendMail') !!}
+
                             <div class="text-right">
                                 <button class="btn btn-danger solid blank" type="reset" onclick="resetForm()"><i class="fas fa-trash-alt"></i></button>
                                 <button class="btn btn-primary solid blank" type="submit">Enviar mensaje</button>
@@ -181,61 +165,4 @@
 
     </section><!-- Main container end -->
 
-
-
-   <!--  <section id="ts-features" class="ts-features">
-        <div class="container" style="padding: 5px">
-            <div class="row">
-                <div class="col-lg-6" style="border: 1px solid #0000; background:#005E76">
-                    <div class="ts-intro">
-                        <div id="formulario-contacto" style="text-align: center;">
-                            <form action="/enviar-consulta" method="POST">
-                                @csrf
-                                <h3 class="into-sub-title" style="color: #fff">Formulario de Contacto</h3>
-
-                                <div style="text-align: left;">
-
-                                    <label for="nombre" style="color: #fff;">Nombre:</label><br>
-                                    <input type="text" id="nombre" name="nombre" required
-                                        placeholder="Carlos Alberto" style="width: 100%;"><br>
-                                    <br>
-                                    <label for="apellido" style="color: #fff;">Apellido:</label><br>
-                                    <input type="text" id="apellido" name="apellido" required
-                                        placeholder="Rodriguez Espinoza" style="width: 100%;"><br>
-                                    <br>
-                                    <label for="email" style="color: #fff;">Correo electrónico:</label><br>
-                                    <input type="email" id="email" name="email" required
-                                        placeholder="ejemplo@ejemplo.com" style="width: 100%;"><br>
-                                    <br>
-                                    <label for="consulta" style="color: #fff;">Consulta:</label><br>
-                                    <textarea id="consulta" name="consulta" required placeholder="Escriba su consulta aquí..."
-                                        style="width: 100%; height: 150px; resize: none; overflow-x: auto; overflow-y: scroll;"></textarea><br>
-                                    <br>
-                                    <div class="text-center" style="margin-bottom: 20px;">
-                                        <button type="reset" class="slider btn btn-primary"
-                                            style="background: lightcoral; margin-right: 10px;"
-                                            onclick="resetForm()">Cancelar</button>
-                                        <button type="submit" class="slider btn btn-primary">Enviar</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="images/contacts/contact1.jpg" alt="Imagen" style="width: 100%; height: 100%;">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        window.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('nombre').focus();
-        });
-
-        function resetForm() {
-            document.getElementById("contact-form").reset();
-        }
-    </script>-->
 @endsection

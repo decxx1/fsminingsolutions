@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
+use Lunaweb\RecaptchaV3\Facades\RecaptchaV3;
 
 //Load Composer's autoloader
 //require 'vendor/autoload.php';
@@ -20,6 +21,11 @@ class ContactController extends Controller
 
     public function send(Request $request)
     {
+        $score = RecaptchaV3::verify($request->get('g-recaptcha-response'), 'sendMail');
+        //Score entre 0 y 0.3, robot. Hasta 0.5 es dudoso. Mayor a 0.5 humano.
+        if($score < 0.5) {
+            return redirect()->back()->with('error', '¡No se pudo comprobar que eres humano!');
+        }
 
         $mail = new PHPMailer(true);
 
