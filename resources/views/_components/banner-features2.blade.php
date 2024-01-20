@@ -90,8 +90,7 @@
                             data-parent="#our-values-accordion">
                             <div class="card-body">
                                 La seguridad es nuestra prioridad número uno. Nos comprometemos a mantener estándares
-                                rigurosos para garantizar un entorno de trabajo seguro y saludable para nuestros
-                                empleados y colaboradores.
+                                rigurosos para garantizar un entorno de trabajo seguro y saludable para nuestros colaboradores.
 
                             </div>
                         </div>

@@ -10,13 +10,13 @@
             infraestructuras para la industria minera, con un enfoque en el uso eficiente de
             recursos naturales y energías renovables.'
         ],
-        [
-            'directory' => asset('images/projects/project2.jpg'),
-            'icon' => '',
-            'title' => 'Geología',
-            'content' => 'Estudio y asesoramiento en la exploración de recursos minerales,
-            incluyendo los de factibilidad y evaluación de impacto ambiental.'
-        ],
+        // [
+        //     'directory' => asset('images/projects/project2.jpg'),
+        //     'icon' => '',
+        //     'title' => 'Geología',
+        //     'content' => 'Estudio y asesoramiento en la exploración de recursos minerales,
+        //     incluyendo los de factibilidad y evaluación de impacto ambiental.'
+        // ],
         [
             'directory' => asset ('images/projects/project3.jpg'),
             'icon' => '',
@@ -24,14 +24,14 @@
             'content' => 'Asesoramiento en medidas de seguridad y prevención de riesgos en
             proyectos mineros, incluyendo capacitación y seguimiento constante.'
         ],
-        [
-            'directory' => asset ('images/projects/project4.jpg'),
-            'icon' => '',
-            'title' => 'Técnicas y procedimientos',
-            'content' => 'Desarrollo e implementación de técnicas y procedimientos innovadores
-            para la extracción y procesamiento de minerales, con un enfoque en la sostenibilidad
-            y en la reducción del impacto ambiental.'
-        ],
+        // [
+        //     'directory' => asset ('images/projects/project4.jpg'),
+        //     'icon' => '',
+        //     'title' => 'Técnicas y procedimientos',
+        //     'content' => 'Desarrollo e implementación de técnicas y procedimientos innovadores
+        //     para la extracción y procesamiento de minerales, con un enfoque en la sostenibilidad
+        //     y en la reducción del impacto ambiental.'
+        // ],
         [
             'directory' => asset ('images/projects/project5.jpg'),
             'icon' => '',
@@ -51,12 +51,6 @@
         // ... Agrega los valores para los otros servicios
     ];
 @endphp
-
-@section('top-layer')
-    <!-- el banner de arriba con la direccion y las redes sociales -->
-    @component('_components.top-bar')
-    @endcomponent
-@endsection
 
 
 @section('banners')
@@ -102,7 +96,7 @@
                 </div>
             </div>
             <h2 class="mb-5" style="color: black; text-align: center;"></h2>
-            <div class="row">
+            <div class="row justify-content-center">
                 @foreach ($services as $service)
                     @component('_components.services-page')
                         @slot('title', $service['title'] )

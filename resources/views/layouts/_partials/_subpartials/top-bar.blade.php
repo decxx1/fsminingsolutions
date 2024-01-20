@@ -3,13 +3,13 @@
       <div class="row">
           <div class="col-lg-8 col-md-8">
             <ul class="top-info text-center text-md-left">
-                <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">Dirección-Ciudad</p>
+                <li><i class="fas fa-map-marker-alt"></i> <p class="info-text"><a href="https://maps.app.goo.gl/4jQmwQiRD43nskeN8" style="color: black !important" target="_blank">Toribio Tedin 77 - Salta Capital</a></p>
                 </li>
             </ul>
           </div>
           <!--/ Top info end -->
 
-          <div class="col-lg-4 col-md-4 top-social text-center text-md-right" >
+          {{-- <div class="col-lg-4 col-md-4 top-social text-center text-md-right" >
             <ul class="list-unstyled">
                 <li>
                   <a title="Facebook" href="#" target=_blank >
@@ -26,7 +26,7 @@
                   </a>
                 </li>
             </ul>
-          </div>
+          </div> --}}
           <!--/ Top social end -->
       </div>
       <!--/ Content row end -->

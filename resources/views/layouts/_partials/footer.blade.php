@@ -11,7 +11,7 @@
                         minera, a nivel nacional e internacional</p>
 
 
-                    <div class="footer-social">
+                    {{-- <div class="footer-social">
                         <ul>
                             <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -20,7 +20,7 @@
                             <!--  <li><a href="https://github.com/themefisher" aria-label="Github"><i
                                         class="fab fa-github"></i></a></li>-->
                         </ul>
-                    </div><!-- Footer social end -->
+                    </div> --}}
                 </div><!-- Col end -->
 
 
@@ -28,13 +28,11 @@
                 <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
                     <h3 class="widget-title">Nuestros horarios</h3>
                     <div class="working-hours">
-                        Trabajamos 7 días a la semana, todos los días.
-                        Contacta con nosotros si tienes alguna emergencia,
-                        a través de nuestra línea de ayuda o completa el formulario.
-                        <br>
-                        <br> Lunes a Viernes: <span class="text-right"> 08:00 a 13:00 / 16:00 a 21:00 </span>
-                        <br> Sabados: <span class="text-right">08:00 a 15:00</span>
-                        <br> Domingos y feriados: <span class="text-right">Solo urgencias.</span>
+                        Contamos con guardia para urgencias las 24HS.<br/><br/>
+                        Horarios de atención:
+
+                        <br> Lunes a Viernes: <span class="text-right"> 08:00 a 18:00</span>
+                        <br> Sabados: <span class="text-right">09:00 a 13:00</span>
                     </div>
                 </div><!-- Col end -->
 
@@ -63,7 +61,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    
+
                 </div>
             </div><!-- Row end -->
 

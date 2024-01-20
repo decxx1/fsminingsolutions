@@ -36,11 +36,6 @@
 
     @endsection
 
-    @section('top-layer')
-        <!-- el banner de arriba con la direccion y las redes sociales -->
-        @component('_components.top-bar')
-        @endcomponent
-    @endsection
 
 @section('banners')
     @component('_components.breadcrumb')
@@ -55,8 +50,8 @@
 
             <div class="row text-center">
                 <div class="col-12">
-                    <h2 class="section-title">Descubre nuestra empresa</h2>
-                    <h3 class="section-sub-title">Encuéntranos</h3>
+                    <h2 class="section-title">Contacte con nosotros</h2>
+                    <h3 class="section-sub-title">Encuéntrenos</h3>
                 </div>
             </div>
             <!--/ Title row end -->
@@ -68,8 +63,8 @@
                             <i class="fas fa-map-marker-alt mr-0"></i>
                         </span>
                         <div class="ts-service-box-content">
-                            <h4>Visita nuestras oficinas</h4>
-                            <p>Dirección, Ciudad, Mendoza, Argentina</p>
+                            <h4>Visite nuestras oficinas</h4>
+                            <p><a href="https://maps.app.goo.gl/4jQmwQiRD43nskeN8" target="_blank">Toribio Tedin 77 - Salta Capital</a></p>
                         </div>
                     </div>
                 </div><!-- Col 1 end -->
@@ -92,7 +87,7 @@
                             <i class="fa fa-phone-square mr-0"></i>
                         </span>
                         <div class="ts-service-box-content">
-                            <h4>Llámanos</h4>
+                            <h4>Llámenos</h4>
                             <p>(+99) 99-9999999</p>
                         </div>
                     </div>
@@ -103,7 +98,7 @@
             <div class="gap-60"></div>
 
             <div class="google-map">
-                <div id="map" class="map" data-latitude="40.712776" data-longitude="-74.005974" data-marker="images/marker.png" data-marker-name="Constra"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10245.907068786364!2d-65.39770968532314!3d-24.779177177803824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3952f62fd97%3A0xddc15b0d2a62d19c!2sToribio%20Ted%C3%ADn%2077%2C%20Salta!5e0!3m2!1ses!2sar!4v1705772045899!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
 

@@ -27,7 +27,7 @@
         ],
         [
             //5-TRANSPORTE Y PROCESAMIENTO
-            'directory' => asset('images/icon-image/service-icon5.png'),
+            'directory' => asset('images/icon-image/service-icon13.png'),
             'title' => 'Transporte y procesamiento',
             'content' => 'Alquiler de vehículos, maquinarias y equipamientos, con o sin chofer y/o operarios.',
         ],
@@ -49,7 +49,7 @@
             'title' => 'Estructuras portátiles',
             'content' => 'Venta y alquiler de módulos habitacionales, carpas, generadores y todo lo necesario para adaptarse al terreno.',
         ],
-        
+
     ];
 @endphp
 
@@ -62,7 +62,7 @@
 
 <section id="ts-service-area" class="ts-service-area pb-0">
     <div class="container">
-        
+
         @yield('titles-service-area')
         <!--/ Title row end -->
 

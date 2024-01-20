@@ -80,11 +80,6 @@
     ];
 @endphp
 
-@section('top-layer')
-    <!-- el banner de arriba con la direccion y las redes sociales -->
-    @component('_components.top-bar')
-    @endcomponent
-
 
     @section('banners')
         @component('_components.breadcrumb')
@@ -107,4 +102,4 @@
             </div>
         </section>
     @endsection
-@endsection
+

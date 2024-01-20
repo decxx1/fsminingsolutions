@@ -13,7 +13,6 @@
 
     <div class="body-inner">
 
-        @yield('top-layer'):
 
         <!-- HEADER -->
         @include('layouts._partials.header')
