@@ -98,7 +98,7 @@
             <h2 class="mb-5" style="color: black; text-align: center;"></h2>
             <div class="row justify-content-center">
                 @foreach ($services as $service)
-                    @component('_components.services-page')
+                    @component('_components.services-page2')
                         @slot('title', $service['title'] )
                         @slot('icon', $service['icon'] )
                         @slot('directory', $service['directory'] )

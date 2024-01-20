@@ -63,7 +63,7 @@
                             <i class="fas fa-map-marker-alt mr-0"></i>
                         </span>
                         <div class="ts-service-box-content">
-                            <h4>Visite nuestras oficinas</h4>
+                            <h4>Nuestras oficinas</h4>
                             <p><a class="text-white" href="https://maps.app.goo.gl/4jQmwQiRD43nskeN8" target="_blank">Toribio Tedin 77 - Salta Capital</a></p>
                         </div>
                     </div>
