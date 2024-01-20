@@ -64,7 +64,7 @@
                         </span>
                         <div class="ts-service-box-content">
                             <h4>Visite nuestras oficinas</h4>
-                            <p><a href="https://maps.app.goo.gl/4jQmwQiRD43nskeN8" target="_blank">Toribio Tedin 77 - Salta Capital</a></p>
+                            <p><a class="text-white" href="https://maps.app.goo.gl/4jQmwQiRD43nskeN8" target="_blank">Toribio Tedin 77 - Salta Capital</a></p>
                         </div>
                     </div>
                 </div><!-- Col 1 end -->
