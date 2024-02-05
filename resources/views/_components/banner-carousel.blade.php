@@ -35,14 +35,14 @@
       </div>
     </div> --}}
 
-    <div class="banner-carousel-item" style="background-image:url({{ asset ('images/slider-main/bg3.jpg') }}">
+    <div class="banner-carousel-item" style="background-image:url({{ asset ('images/slider-main/bg6.jpg') }}">
       <div class="slider-content text-right">
           <div class="container h-100 pr-zindex" >
             <div class="row align-items-center h-100">
                 <div class="col-md-12">
                   <h2 class="slide-title" data-animation-in="slideInDown">Alquiler y venta</h2>
-                  <h3 class="slide-sub-title" data-animation-in="fadeIn">Vehículos, maquinarias y herramientas</h3>
-                  <p class="slider-description lead" data-animation-in="slideInRight">Contamos con operarios calificados.</p>
+                  <h3 class="slide-sub-title" data-animation-in="fadeIn">Camionetas, camiones y equipo vial</h3>
+                  <p class="slider-description lead" data-animation-in="slideInRight"></p>
                   <div data-animation-in="slideInLeft">
                       <a href={{ route('contact') }} class="slider btn btn-primary" aria-label="contact-with-us">Asesoramiento sin cargo</a>
                       <a href="" class="slider btn btn-primary border" aria-label="learn-more-about-us" id="conoce-mas-btn">Conoce mas</a>

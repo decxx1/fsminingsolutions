@@ -147,7 +147,7 @@
                             {!! RecaptchaV3::field('sendMail') !!}
 
                             <div class="text-right">
-                                <button class="btn btn-danger solid blank" type="reset" onclick="resetForm()"><i class="fas fa-trash-alt"></i></button>
+                                <button class="btn btn-secondary solid blank" type="reset" onclick="resetForm()"><i class="fas fa-trash-alt"></i></button>
                                 <button class="btn btn-primary solid blank" type="submit">Enviar mensaje</button>
                             </div>
                         </form>
