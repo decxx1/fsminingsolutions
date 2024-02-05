@@ -72,7 +72,7 @@
             </div>
             <!-- TO DO modificar el número de whatsapp -->
             <!-- Whatsapp button -->
-            <a class="float-button" target="_blank" href="https://wa.me/54">
+            <a class="float-button" target="_blank" href="https://wa.me/543876197044">
                 <i class="whbutton fab fa-whatsapp fa-fw" aria-hidden="true"></i>
                 <span>Consultas<span>
             </a>

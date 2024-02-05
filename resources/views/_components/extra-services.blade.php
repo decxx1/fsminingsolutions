@@ -18,7 +18,6 @@
             industria.</p>
         </div><!-- Col end -->
 
-
     </div><!-- row end -->
 
     <div class="row mb-5" >
@@ -39,6 +38,18 @@
                 style="width: 100%; height: 258px;border-radius: 20px;">
         </div>
 
+    </div><!-- row end -->
+
+    <div class="row mb-5">
+        <div class="col-lg-6 mt-5 mt-lg-0">
+            <img class="slider-image" src="{{ asset ('images/slider-main/bg2.jpg') }}" alt="Establecerse en el campo"
+                style="width: 100%; height: 75%;border-radius: 20px;">
+        </div>
+
+        <div class="col-lg-6">
+            <h4 class="column-title">Establecerse en el campo.</h4>
+            <p><strong>Soluciones</strong> integrales y personalizadas para <strong>establecerte y operar</strong> de manera eficiente <strong>en el campo</strong>.<strong>Infraestructura de campamento, Mobilidad, Suministro de agua y energía, Seguridad.</strong><br/>Nuestros servicios están diseñados para proporcionar comodidad, seguridad y eficiencia en tu operación en el campo.</p>
+        </div><!-- Col end -->
 
     </div><!-- row end -->
 

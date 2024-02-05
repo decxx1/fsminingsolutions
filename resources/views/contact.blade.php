@@ -76,7 +76,7 @@
                         </span>
                         <div class="ts-service-box-content">
                             <h4>Escríbenos</h4>
-                            <p>info@fsminingsolutions.com.ar</p>
+                            <p><a class="text-white" href="mailto:info@fsminingsolutions.com.ar" target="_blank">info@fsminingsolutions.com.ar</a></p>
                         </div>
                     </div>
                 </div><!-- Col 2 end -->
@@ -88,7 +88,7 @@
                         </span>
                         <div class="ts-service-box-content">
                             <h4>Llámenos</h4>
-                            <p>(+99) 99-9999999</p>
+                            <p><a class="text-white" href="tel:+543876197044" target="_blank">+54 (387) 619 7044</a></p>
                         </div>
                     </div>
                 </div><!-- Col 3 end -->

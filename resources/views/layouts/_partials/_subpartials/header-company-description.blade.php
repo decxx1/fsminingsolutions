@@ -15,7 +15,7 @@
                     <div class="info-box">
                       <div class="info-box-content">
                           <p class="info-box-title">Teléfono</p>
-                          <p class="info-box-subtitle">(+54) 11-44138057</p>
+                          <p class="info-box-subtitle"><a class="text-black" href="tel:+543876197044" target="_blank">+54 (387) 619 7044</a></p>
                       </div>
                     </div>
                   </li>
@@ -23,7 +23,7 @@
                     <div class="info-box">
                       <div class="info-box-content">
                           <p class="info-box-title">E-mail</p>
-                          <p class="info-box-subtitle">info@fsminingsolutions.com.ar</p>
+                          <p class="info-box-subtitle"><a style="color:black !important" href="mailto:info@fsminingsolutions.com.ar" target="_blank">info@fsminingsolutions.com.ar</a></p>
                       </div>
                     </div>
                   </li>

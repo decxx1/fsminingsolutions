@@ -16,8 +16,8 @@
           <div class="texture-carousel"></div>
       </div>
     </div>
-  
-    <div class="banner-carousel-item" style="background-image:url({{ asset ('images/slider-main/bg2.jpg') }})">
+
+    {{-- <div class="banner-carousel-item" style="background-image:url({{ asset ('images/slider-main/bg2.jpg') }})">
       <div class="slider-content text-left">
           <div class="container h-100 pr-zindex">
             <div class="row align-items-center h-100">
@@ -33,8 +33,8 @@
           </div>
           <div class="texture-carousel"></div>
       </div>
-    </div>
-  
+    </div> --}}
+
     <div class="banner-carousel-item" style="background-image:url({{ asset ('images/slider-main/bg3.jpg') }}">
       <div class="slider-content text-right">
           <div class="container h-100 pr-zindex" >
@@ -53,6 +53,5 @@
           <div class="texture-carousel"></div>
       </div>
     </div>
-    
+
   </div>
-  
