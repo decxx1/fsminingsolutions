@@ -7,8 +7,8 @@
                   <h2 class="slide-title" data-animation-in="slideInLeft">Máquinas y herramientas para la</h2>
                   <h3 class="slide-sub-title" data-animation-in="slideInRight">Industria minera</h3>
                   <p data-animation-in="slideInLeft" data-duration-in="1.2">
-                    <a href="" class="slider btn btn-primary" id="nuestros-productos-btn">Nuestros productos</a>
-                    <a href={{ route('contact') }} class="slider btn btn-primary border">Contáctanos</a>
+                    <a href={{ route('services') }} class="slider btn btn-primary" id="nuestros-productos-btn">Nuestros servicios</a>
+                    <a href={{ route('contact') }} class="slider btn btn-primary border">Contáctenos</a>
                   </p>
                 </div>
             </div>
@@ -45,7 +45,6 @@
                   <p class="slider-description lead" data-animation-in="slideInRight"></p>
                   <div data-animation-in="slideInLeft">
                       <a href={{ route('contact') }} class="slider btn btn-primary" aria-label="contact-with-us">Asesoramiento sin cargo</a>
-                      <a href="" class="slider btn btn-primary border" aria-label="learn-more-about-us" id="conoce-mas-btn">Conoce mas</a>
                   </div>
                 </div>
             </div>
