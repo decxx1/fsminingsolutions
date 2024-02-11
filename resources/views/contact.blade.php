@@ -28,14 +28,17 @@
     </script>
 @endif
 
-
-
 @extends('layouts.landing')
 
-    @section('head')
-
-    @endsection
-
+@section('head')
+    @component('_components.seo')
+        @slot('titlePage', 'FS Mining Solutions SRL - Contacto' )
+        @slot('canonnical', 'https://fsminingsolutions.com.ar/contact' )
+        @slot('metaTitle', 'FS Mining Solutions - Contacto' )
+        @slot('metaDescription', 'Contacte con nosotros, para una atención personalizada, ¿Necesita servicios para la industria minera?' )
+        @slot('metaImage', 'https://fsminingsolutions.com.ar/images/logo-version-2.png' )
+    @endcomponent
+@endsection
 
 @section('banners')
     @component('_components.breadcrumb')

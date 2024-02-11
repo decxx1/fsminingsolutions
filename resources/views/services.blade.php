@@ -1,5 +1,13 @@
 @extends('layouts.landing')
-
+@section('head')
+    @component('_components.seo')
+        @slot('titlePage', 'FS Mining Solutions SRL - Servicios' )
+        @slot('canonnical', 'https://fsminingsolutions.com.ar/services' )
+        @slot('metaTitle', 'FS Mining Solutions - Nuestros Servicios' )
+        @slot('metaDescription', 'Contamos con servicios especializados para la industria minera, entre ellos: Alquiler y venta de grupos electrogenos, torres luminarias, camionetas, autos, camiones y mucho mas' )
+        @slot('metaImage', 'https://fsminingsolutions.com.ar/images/slider-main/bg6.jpg' )
+    @endcomponent
+@endsection
 @php
     //Argumentos para service-card: directorio de la imagen, título y contenido del servicio
     $services = [

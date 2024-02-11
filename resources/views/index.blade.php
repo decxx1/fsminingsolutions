@@ -1,4 +1,13 @@
 @extends('layouts.landing')
+@section('head')
+    @component('_components.seo')
+        @slot('titlePage', 'FS Mining Solutions SRL - Inicio' )
+        @slot('canonnical', 'https://fsminingsolutions.com.ar' )
+        @slot('metaTitle', 'FS Mining Solutions - Servicios para la minería' )
+        @slot('metaDescription', 'Prestamos servicios especializados y comercializamos productos destinados a satisfacer las necesidades de la industria minera, a nivel nacional e internacional.' )
+        @slot('metaImage', 'https://fsminingsolutions.com.ar/images/slider-main/minera2.jpg' )
+    @endcomponent
+@endsection
 @php
     //Argumentos para service-card: directorio de la imagen, título y contenido del servicio
     $services = [
@@ -122,3 +131,28 @@
         @endsection
     @endcomponent
 @endsection
+
+<script>
+    // Obtén una referencia a los botones por sus identificadores
+    const botonProductos = document.getElementById('nuestros-productos-btn');
+   //  var botonHabitables = document.getElementById('nuestros-habitables-btn');
+   //  var botonConoceMas = document.getElementById('conoce-mas-btn');
+
+    // Agrega un evento de clic a cada botón
+    botonProductos.addEventListener('click', scrollToSection);
+   //  botonHabitables.addEventListener('click', scrollToSection);
+   //  botonConoceMas.addEventListener('click', scrollToSection);
+
+    // Función de desplazamiento hacia la sección de destino
+    function scrollToSection(event) {
+        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+        // Obtén una referencia a la sección de destino
+        const seccionProductos = document.querySelector('#ts-service-area');
+
+        // Desplázate hacia la sección de destino utilizando smooth scrolling
+        seccionProductos.scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+</script>

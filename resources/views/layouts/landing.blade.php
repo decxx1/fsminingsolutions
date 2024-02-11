@@ -3,17 +3,14 @@
 
 <!-- HEAD -->
 <head>
-@include('layouts._partials.head')
-@yield('head')
+    @include('layouts._partials.head')
+    @yield('head')
 </head>
 <!-- END HEAD -->
-
 
 <body>
 
     <div class="body-inner">
-
-
         <!-- HEADER -->
         @include('layouts._partials.header')
         <!-- END HEADER -->
