@@ -132,27 +132,4 @@
     @endcomponent
 @endsection
 
-<script>
-    // Obtén una referencia a los botones por sus identificadores
-    const botonProductos = document.getElementById('nuestros-productos-btn');
-   //  var botonHabitables = document.getElementById('nuestros-habitables-btn');
-   //  var botonConoceMas = document.getElementById('conoce-mas-btn');
 
-    // Agrega un evento de clic a cada botón
-    botonProductos.addEventListener('click', scrollToSection);
-   //  botonHabitables.addEventListener('click', scrollToSection);
-   //  botonConoceMas.addEventListener('click', scrollToSection);
-
-    // Función de desplazamiento hacia la sección de destino
-    function scrollToSection(event) {
-        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
-
-        // Obtén una referencia a la sección de destino
-        const seccionProductos = document.querySelector('#ts-service-area');
-
-        // Desplázate hacia la sección de destino utilizando smooth scrolling
-        seccionProductos.scrollIntoView({
-            behavior: 'smooth'
-        });
-    }
-</script>
