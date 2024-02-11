@@ -5,7 +5,7 @@
         @slot('canonnical', 'https://fsminingsolutions.com.ar' )
         @slot('metaTitle', 'FS Mining Solutions - Servicios para la minería' )
         @slot('metaDescription', 'Prestamos servicios especializados y comercializamos productos destinados a satisfacer las necesidades de la industria minera, a nivel nacional e internacional.' )
-        @slot('metaImage', 'https://fsminingsolutions.com.ar/images/slider-main/minera2.jpg' )
+        @slot('metaImage', 'https://fsminingsolutions.com.ar/images/only-logo-blanco.png' )
     @endcomponent
 @endsection
 @php
