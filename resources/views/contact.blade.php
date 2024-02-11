@@ -36,7 +36,7 @@
         @slot('canonnical', 'https://fsminingsolutions.com.ar/contact' )
         @slot('metaTitle', 'FS Mining Solutions - Contacto' )
         @slot('metaDescription', 'Contacte con nosotros, para una atención personalizada, ¿Necesita servicios para la industria minera?' )
-        @slot('metaImage', 'https://fsminingsolutions.com.ar/images/logo-version-2.png' )
+        @slot('metaImage', 'https://fsminingsolutions.com.ar/images/logo-version-1' )
     @endcomponent
 @endsection
 
