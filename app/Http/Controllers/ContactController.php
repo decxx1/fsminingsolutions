@@ -20,7 +20,12 @@ class ContactController extends Controller
         if($score < 0.5) {
             return redirect()->back()->with('error', '¡No se pudo comprobar que eres humano!');
         }
-        $email_password = env('EMAIL_PASSWORD');
+        $emailUserName = env('EMAIL_USERNAME');
+        $emailPassword = env('EMAIL_PASSWORD');
+        $smtpHost = env('SMTP_HOST');
+        $smtpPort = env('SMTP_PORT');
+        $smtpEncryption = env('SMTP_ENCRYPTION');
+
         $mail = new PHPMailer(true);
 
         $name = $request->input('name');
@@ -32,17 +37,17 @@ class ContactController extends Controller
             //Server settings
             $mail->SMTPDebug = 0; //SMTP::DEBUG_SERVER;                      //Enable verbose debug output
             $mail->isSMTP();                                            //Send using SMTP
-            $mail->Host       = 'smtp.hostinger.com';                     //Set the SMTP server to send through
+            $mail->Host       = $smtpHost;                     //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = 'info@fsminingsolutions.com.ar';                     //SMTP username
-            $mail->Password   = $email_password;                               //SMTP password
-            $mail->SMTPSecure = 'ssl';            //Enable implicit TLS encryption
-            $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS
+            $mail->Username   = $emailUserName;                     //SMTP username
+            $mail->Password   = $emailPassword;                               //SMTP password
+            $mail->SMTPSecure = $smtpEncryption;            //Enable implicit TLS encryption
+            $mail->Port       = $smtpPort;                                    //TCP port to connect to; use 587 if you have set SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS
 
 
             // Establecer el remitente y la dirección de envío real
-            $mail->setFrom('info@fsminingsolutions.com.ar', 'Fs Mining Solutions');
-            $mail->addAddress('info@fsminingsolutions.com.ar');
+            $mail->setFrom($emailUserName, 'Fs Mining Solutions');
+            $mail->addAddress($emailUserName);
 
             // Establecer el remitente que se mostrará en el campo "From"
             $mail->clearReplyTos(); // Eliminar las direcciones de respuesta anteriores (si las hubiera)
