@@ -2,18 +2,12 @@
 
 namespace App\Http\Controllers;
 
-//.../fsminingsolutions/app/Http/Controllers/ContactController.php
-
-//Import PHPMailer classes into the global namespace
-//These must be at the top of your script, not inside a function
 use Illuminate\Http\Request;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 use Lunaweb\RecaptchaV3\Facades\RecaptchaV3;
 
-//Load Composer's autoloader
-//require 'vendor/autoload.php';
 
 
 class ContactController extends Controller
@@ -26,7 +20,7 @@ class ContactController extends Controller
         if($score < 0.5) {
             return redirect()->back()->with('error', '¡No se pudo comprobar que eres humano!');
         }
-
+        $email_password = env('EMAIL_PASSWORD');
         $mail = new PHPMailer(true);
 
         $name = $request->input('name');
@@ -41,27 +35,18 @@ class ContactController extends Controller
             $mail->Host       = 'smtp.hostinger.com';                     //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
             $mail->Username   = 'info@fsminingsolutions.com.ar';                     //SMTP username
-            $mail->Password   = 'Fsminingsolutions1@';                               //SMTP password
+            $mail->Password   = $email_password;                               //SMTP password
             $mail->SMTPSecure = 'ssl';            //Enable implicit TLS encryption
             $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS
 
 
             // Establecer el remitente y la dirección de envío real
-            $mail->setFrom('info@fsminingsolutions.com.ar', 'Server mail');
-            $mail->addAddress('info@fsminingsolutions.com.ar', 'Server mail');
+            $mail->setFrom('info@fsminingsolutions.com.ar', 'Fs Mining Solutions');
+            $mail->addAddress('info@fsminingsolutions.com.ar');
 
             // Establecer el remitente que se mostrará en el campo "From"
             $mail->clearReplyTos(); // Eliminar las direcciones de respuesta anteriores (si las hubiera)
             $mail->addReplyTo($email, $name);
-
-
-            //     //Recipients
-            //     $mail->setFrom($email, $name);
-            //     $mail->addAddress('info@fsminingsolutions.com.ar', 'Server mail');     //Add a recipient
-            //    // $mail->addAddress('ellen@example.com');               //Name is optional
-            //     //$mail->addReplyTo('info@example.com', 'Information');
-            //     //$mail->addCC('cc@example.com');
-            //     //$mail->addBCC('bcc@example.com');
 
             $mail->CharSet = 'UTF-8';
 
